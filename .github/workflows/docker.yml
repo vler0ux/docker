@@ -15,5 +15,5 @@ jobs:
         run: docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/getting-started .
       - name: Push Docker image
         run: docker push ${{ secrets.DOCKERHUB_USERNAME }}/getting-started
-        name: Deployement
+      - name: Deployement
         run: echo  "${{ secrets.URL_DEPLOYEMENT}}"
